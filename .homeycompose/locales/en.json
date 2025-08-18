@@ -1,0 +1,85 @@
+{
+  "$app": {
+    "name": "SolarEdge",
+    "description": "Powering People's Lives Around the World"
+  },
+  "$drivers": {
+    "battery": {
+      "name": "Battery",
+      "settings": {
+        "username": {
+          "label": "Username"
+        },
+        "password": {
+          "label": "Password"
+        }
+      }
+    },
+    "evcharger": {
+      "name": "EV Charger",
+      "settings": {
+        "username": {
+          "label": "Username"
+        },
+        "password": {
+          "label": "Password"
+        }
+      },
+      "capabilitiesOptions": {
+        "meter_power.charged": {
+          "title": "Total Charged Energy"
+        },
+        "meter_power.discharged": {
+          "title": "Total Discharged Energy"
+        }
+      }
+    },
+    "inverter": {
+      "name": "Inverter",
+      "settings": {
+        "username": {
+          "label": "Username"
+        },
+        "password": {
+          "label": "Password"
+        }
+      },
+      "capabilitiesOptions": {
+        "measure_power": {
+          "title": "Generated Power"
+        },
+        "meter_power": {
+          "title": "Generated Total"
+        },
+        "meter_power.day": {
+          "title": "Generated Today"
+        },
+        "meter_power.month": {
+          "title": "Generated This Month"
+        },
+        "meter_power.year": {
+          "title": "Generated This Year"
+        }
+      }
+    },
+    "meter": {
+      "name": "Meter",
+      "settings": {
+        "username": {
+          "label": "Username"
+        },
+        "password": {
+          "label": "Password"
+        }
+      },
+      "capabilitiesOptions": {
+        "meter_power.imported": {
+          "title": "Imported Energy"
+        },
+        "meter_power.exported": {
+          "title": "Exported Energy"
+        }
+      }
+    }
+  }
+}

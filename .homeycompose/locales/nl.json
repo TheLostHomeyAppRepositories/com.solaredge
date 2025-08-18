@@ -1,0 +1,85 @@
+{
+  "$app": {
+    "name": "SolarEdge",
+    "description": "Energie voor mensen wereldwijd"
+  },
+  "$drivers": {
+    "battery": {
+      "name": "Batterij",
+      "settings": {
+        "username": {
+          "label": "Gebruikersnaam"
+        },
+        "password": {
+          "label": "Wachtwoord"
+        }
+      }
+    },
+    "evcharger": {
+      "name": "EV Lader",
+      "settings": {
+        "username": {
+          "label": "Gebruikersnaam"
+        },
+        "password": {
+          "label": "Wachtwoord"
+        }
+      },
+      "capabilitiesOptions": {
+        "meter_power.charged": {
+          "title": "Totaal opgeladen energie"
+        },
+        "meter_power.discharged": {
+          "title": "Totaal ontladen energie"
+        }
+      }
+    },
+    "inverter": {
+      "name": "Omvormer",
+      "settings": {
+        "username": {
+          "label": "Gebruikersnaam"
+        },
+        "password": {
+          "label": "Wachtwoord"
+        }
+      },
+      "capabilitiesOptions": {
+        "measure_power": {
+          "title": "Opgewekte vermogen"
+        },
+        "meter_power": {
+          "title": "Totaal opgewekt"
+        },
+        "meter_power.day": {
+          "title": "Opgewekt vandaag"
+        },
+        "meter_power.month": {
+          "title": "Opgewekt deze maand"
+        },
+        "meter_power.year": {
+          "title": "Opgewekt dit jaar"
+        }
+      }
+    },
+    "meter": {
+      "name": "Meter",
+      "settings": {
+        "username": {
+          "label": "Gebruikersnaam"
+        },
+        "password": {
+          "label": "Wachtwoord"
+        }
+      },
+      "capabilitiesOptions": {
+        "meter_power.imported": {
+          "title": "Geïmporteerde energie"
+        },
+        "meter_power.exported": {
+          "title": "Geëxporteerde energie"
+        }
+      }
+    }
+  }
+}

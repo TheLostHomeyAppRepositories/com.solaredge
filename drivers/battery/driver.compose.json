@@ -1,8 +1,5 @@
 {
   "$extends": "solaredge",
-  "name": {
-    "en": "Battery"
-  },
   "class": "battery",
   "capabilities": [
     "measure_battery",

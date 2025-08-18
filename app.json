@@ -9,12 +9,6 @@
     "local",
     "cloud"
   ],
-  "name": {
-    "en": "SolarEdge"
-  },
-  "description": {
-    "en": "Powering  People’s Lives Around the World"
-  },
   "category": [
     "energy"
   ],
@@ -80,9 +74,6 @@
           }
         }
       ],
-      "name": {
-        "en": "Battery"
-      },
       "class": "battery",
       "capabilities": [
         "measure_battery",
@@ -95,7 +86,10 @@
           "INTERNAL"
         ]
       },
-      "id": "battery"
+      "id": "battery",
+      "name": {
+        "en": "Battery"
+      }
     },
     {
       "platforms": [
@@ -146,9 +140,6 @@
           }
         }
       ],
-      "name": {
-        "en": "EV Charger"
-      },
       "class": "evcharger",
       "capabilities": [
         "measure_power",
@@ -157,24 +148,23 @@
         "evcharger_charging",
         "evcharger_charging_state"
       ],
-      "capabilitiesOptions": {
-        "meter_power.charged": {
-          "title": {
-            "en": "Total Charged Energy"
-          }
-        },
-        "meter_power.discharged": {
-          "title": {
-            "en": "Total Discharged Energy"
-          }
-        }
-      },
       "energy": {
         "evCharger": true,
         "meterPowerImportedCapability": "meter_power.charged",
         "meterPowerExportedCapability": "meter_power.discharged"
       },
-      "id": "evcharger"
+      "id": "evcharger",
+      "name": {
+        "en": "EV Charger"
+      },
+      "capabilitiesOptions": {
+        "meter_power.charged": {
+          "title": "Total Charged Energy"
+        },
+        "meter_power.discharged": {
+          "title": "Total Discharged Energy"
+        }
+      }
     },
     {
       "platforms": [
@@ -225,9 +215,6 @@
           }
         }
       ],
-      "name": {
-        "en": "Inverter"
-      },
       "class": "solarpanel",
       "capabilities": [
         "measure_power",
@@ -236,34 +223,27 @@
         "meter_power.month",
         "meter_power.year"
       ],
+      "id": "inverter",
+      "name": {
+        "en": "Inverter"
+      },
       "capabilitiesOptions": {
         "measure_power": {
-          "en": "Generated Power",
-          "nl": "Opgewekte energie",
-          "de": "Energieproduktion"
+          "title": "Generated Power"
         },
         "meter_power": {
-          "title": {
-            "en": "Generated Total"
-          }
+          "title": "Generated Total"
         },
         "meter_power.day": {
-          "title": {
-            "en": "Generated Today"
-          }
+          "title": "Generated Today"
         },
         "meter_power.month": {
-          "title": {
-            "en": "Generated This Month"
-          }
+          "title": "Generated This Month"
         },
         "meter_power.year": {
-          "title": {
-            "en": "Generated This Year"
-          }
+          "title": "Generated This Year"
         }
-      },
-      "id": "inverter"
+      }
     },
     {
       "platforms": [
@@ -314,33 +294,35 @@
           }
         }
       ],
-      "name": {
-        "en": "Meter"
-      },
       "class": "sensor",
       "capabilities": [
         "measure_power",
         "meter_power.imported",
         "meter_power.exported"
       ],
-      "capabilitiesOptions": {
-        "meter_power.imported": {
-          "title": {
-            "en": "Imported Energy"
-          }
-        },
-        "meter_power.exported": {
-          "title": {
-            "en": "Exported Energy"
-          }
-        }
-      },
       "energy": {
         "cumulative": true,
         "cumulativeImportedCapability": "meter_power.imported",
         "cumulativeExportedCapability": "meter_power.exported"
       },
-      "id": "meter"
+      "id": "meter",
+      "name": {
+        "en": "Meter"
+      },
+      "capabilitiesOptions": {
+        "meter_power.imported": {
+          "title": "Imported Energy"
+        },
+        "meter_power.exported": {
+          "title": "Exported Energy"
+        }
+      }
     }
-  ]
+  ],
+  "name": {
+    "en": "SolarEdge"
+  },
+  "description": {
+    "en": "Powering People's Lives Around the World"
+  }
 }
