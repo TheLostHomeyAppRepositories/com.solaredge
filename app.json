@@ -63,14 +63,18 @@
           "id": "username",
           "type": "text",
           "label": {
-            "en": "Username"
+            "de": "Benutzername",
+            "en": "Username",
+            "nl": "Gebruikersnaam"
           }
         },
         {
           "id": "password",
           "type": "password",
           "label": {
-            "en": "Password"
+            "en": "Password",
+            "de": "Passwort",
+            "nl": "Wachtwoord"
           }
         }
       ],
@@ -88,7 +92,9 @@
       },
       "id": "battery",
       "name": {
-        "en": "Battery"
+        "de": "Batterie",
+        "en": "Battery",
+        "nl": "Batterij"
       }
     },
     {
@@ -129,14 +135,18 @@
           "id": "username",
           "type": "text",
           "label": {
-            "en": "Username"
+            "de": "Benutzername",
+            "en": "Username",
+            "nl": "Gebruikersnaam"
           }
         },
         {
           "id": "password",
           "type": "password",
           "label": {
-            "en": "Password"
+            "en": "Password",
+            "de": "Passwort",
+            "nl": "Wachtwoord"
           }
         }
       ],
@@ -155,14 +165,16 @@
       },
       "id": "evcharger",
       "name": {
-        "en": "EV Charger"
+        "de": "EV-Ladegerät",
+        "en": "EV Charger",
+        "nl": "EV Lader"
       },
       "capabilitiesOptions": {
         "meter_power.charged": {
-          "title": "Total Charged Energy"
+          "title": "Totaal opgeladen energie"
         },
         "meter_power.discharged": {
-          "title": "Total Discharged Energy"
+          "title": "Totaal ontladen energie"
         }
       }
     },
@@ -204,14 +216,18 @@
           "id": "username",
           "type": "text",
           "label": {
-            "en": "Username"
+            "de": "Benutzername",
+            "en": "Username",
+            "nl": "Gebruikersnaam"
           }
         },
         {
           "id": "password",
           "type": "password",
           "label": {
-            "en": "Password"
+            "en": "Password",
+            "de": "Passwort",
+            "nl": "Wachtwoord"
           }
         }
       ],
@@ -225,23 +241,25 @@
       ],
       "id": "inverter",
       "name": {
-        "en": "Inverter"
+        "de": "Wechselrichter",
+        "en": "Inverter",
+        "nl": "Omvormer"
       },
       "capabilitiesOptions": {
         "measure_power": {
-          "title": "Generated Power"
+          "title": "Opgewekte vermogen"
         },
         "meter_power": {
-          "title": "Generated Total"
+          "title": "Totaal opgewekt"
         },
         "meter_power.day": {
-          "title": "Generated Today"
+          "title": "Opgewekt vandaag"
         },
         "meter_power.month": {
-          "title": "Generated This Month"
+          "title": "Opgewekt deze maand"
         },
         "meter_power.year": {
-          "title": "Generated This Year"
+          "title": "Opgewekt dit jaar"
         }
       }
     },
@@ -283,14 +301,18 @@
           "id": "username",
           "type": "text",
           "label": {
-            "en": "Username"
+            "de": "Benutzername",
+            "en": "Username",
+            "nl": "Gebruikersnaam"
           }
         },
         {
           "id": "password",
           "type": "password",
           "label": {
-            "en": "Password"
+            "en": "Password",
+            "de": "Passwort",
+            "nl": "Wachtwoord"
           }
         }
       ],
@@ -307,22 +329,28 @@
       },
       "id": "meter",
       "name": {
-        "en": "Meter"
+        "de": "Zähler",
+        "en": "Meter",
+        "nl": "Meter"
       },
       "capabilitiesOptions": {
         "meter_power.imported": {
-          "title": "Imported Energy"
+          "title": "Geïmporteerde energie"
         },
         "meter_power.exported": {
-          "title": "Exported Energy"
+          "title": "Geëxporteerde energie"
         }
       }
     }
   ],
   "name": {
-    "en": "SolarEdge"
+    "de": "SolarEdge",
+    "en": "SolarEdge",
+    "nl": "SolarEdge"
   },
   "description": {
-    "en": "Powering People's Lives Around the World"
+    "de": "Energie für Menschen weltweit",
+    "en": "Powering People's Lives Around the World",
+    "nl": "Energie voor mensen wereldwijd"
   }
 }
