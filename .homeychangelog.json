@@ -43,5 +43,8 @@
   },
   "1.6.1": {
     "en": "Fixed a crash in EV chargers."
+  },
+  "1.6.2": {
+    "en": "Fixed an issue where fetching the total energy usage for a meter."
   }
 }
