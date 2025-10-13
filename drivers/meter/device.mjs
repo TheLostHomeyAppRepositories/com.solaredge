@@ -56,6 +56,10 @@ export default class SolarEdgeDeviceMeter extends SolarEdgeDevice {
               endDate: `${previousYear}-12-31`,
             })
               .then(async result => {
+                if (!result.summary) {
+                  throw new Error('empty_summary');
+                }
+
                 measurements[previousYear] = {
                   imported: result.summary.import,
                   exported: result.summary.export,
@@ -64,7 +68,7 @@ export default class SolarEdgeDeviceMeter extends SolarEdgeDevice {
               })
               .catch(async err => {
                 // If there's no data for this year, so we return null
-                if (err.message.includes('INVALID_ARGUMENTS')) {
+                if (err.message.includes('INVALID_ARGUMENTS') || err.message.includes('empty_summary')) {
                   this.log(`No more data for ${previousYear}`);
                   measurements[previousYear] = 'missing';
                   await this.setStoreValue(`measurements-${previousYear}`, measurements[previousYear]);
