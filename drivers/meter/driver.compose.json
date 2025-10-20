@@ -6,20 +6,6 @@
     "meter_power.imported",
     "meter_power.exported"
   ],
-  "capabilitiesOptions": {
-    "measure_power.grid": {
-      "title": {
-        "en": "Grid Power",
-        "nl": "Netstroom"
-      }
-    },
-    "measure_power.solar": {
-      "title": {
-        "en": "Solar Power",
-        "nl": "Zonne Energie"
-      }
-    }
-  },
   "energy": {
     "cumulative": true,
     "cumulativeImportedCapability": "meter_power.imported",

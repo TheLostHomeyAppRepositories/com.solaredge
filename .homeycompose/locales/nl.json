@@ -78,6 +78,12 @@
         },
         "meter_power.exported": {
           "title": "Geëxporteerde energie"
+        },
+        "measure_power.grid": {
+          "title": "Netvermogen"
+        },
+        "measure_power.solar": {
+          "title": "Zonne Energie"
         }
       }
     }

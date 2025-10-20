@@ -78,6 +78,12 @@
         },
         "meter_power.exported": {
           "title": "Exportierte Energie"
+        },
+        "measure_power.grid": {
+          "title": "Netzleistung"
+        },
+        "measure_power.solar": {
+          "title": "Solar Leistung"
         }
       }
     }
