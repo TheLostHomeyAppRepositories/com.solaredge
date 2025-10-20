@@ -322,6 +322,26 @@
         "meter_power.imported",
         "meter_power.exported"
       ],
+      "capabilitiesOptions": {
+        "measure_power.grid": {
+          "title": {
+            "en": "Grid Power",
+            "nl": "Netstroom"
+          }
+        },
+        "measure_power.solar": {
+          "title": {
+            "en": "Solar Power",
+            "nl": "Zonne Energie"
+          }
+        },
+        "meter_power.imported": {
+          "title": "Geïmporteerde energie"
+        },
+        "meter_power.exported": {
+          "title": "Geëxporteerde energie"
+        }
+      },
       "energy": {
         "cumulative": true,
         "cumulativeImportedCapability": "meter_power.imported",
@@ -332,14 +352,6 @@
         "de": "Zähler",
         "en": "Meter",
         "nl": "Meter"
-      },
-      "capabilitiesOptions": {
-        "meter_power.imported": {
-          "title": "Geïmporteerde energie"
-        },
-        "meter_power.exported": {
-          "title": "Geëxporteerde energie"
-        }
       }
     }
   ],

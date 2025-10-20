@@ -10,11 +10,40 @@ export default class SolarEdgeDeviceMeter extends SolarEdgeDevice {
     // Get Powerflow
     const sitePowerflow = await this.api.getSitePowerflow({ siteId });
 
+    // Consumption
     if (sitePowerflow.consumption?.currentPower === null) {
       await this.setCapabilityValue('measure_power', 0).catch(this.error);
     } else if (typeof sitePowerflow.consumption?.currentPower === 'number') {
       // TODO: Maybe use sitePowerflow.consumption.isConsuming to flip the sign?
       await this.setCapabilityValue('measure_power', Math.round(sitePowerflow.consumption.currentPower * 1000)).catch(this.error);
+    }
+
+    // Grid
+    if (typeof sitePowerflow.grid?.currentPower === 'number') {
+      if (!this.hasCapability('measure_power.grid')) {
+        await this.addCapability('measure_power.grid');
+      }
+
+      let power = Math.round(sitePowerflow.grid.currentPower * 1000);
+      if (sitePowerflow.grid?.status === 'export') {
+        power *= -1;
+      }
+
+      await this.setCapabilityValue('measure_power.grid', power).catch(this.error);
+    }
+
+    // Solar
+    if (typeof sitePowerflow.solarProduction?.currentPower === 'number') {
+      if (!this.hasCapability('measure_power.solar')) {
+        await this.addCapability('measure_power.solar');
+      }
+
+      let power = Math.round(sitePowerflow.solarProduction.currentPower * 1000);
+      if (sitePowerflow.solarProduction?.isProducing === false) {
+        power *= -1;
+      }
+
+      await this.setCapabilityValue('measure_power.solar', power).catch(this.error);
     }
 
     // Set Device Availability
