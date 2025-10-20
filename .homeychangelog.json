@@ -46,5 +46,8 @@
   },
   "1.6.2": {
     "en": "Fixed an issue where fetching the total energy usage for a meter."
+  },
+  "1.7.0": {
+    "en": "Added Grid & Solar power measurements to the Meter."
   }
 }
