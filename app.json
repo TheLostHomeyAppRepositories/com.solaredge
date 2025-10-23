@@ -171,10 +171,18 @@
       },
       "capabilitiesOptions": {
         "meter_power.charged": {
-          "title": "Totaal opgeladen energie"
+          "title": {
+            "de": "Geladene Gesamtenergie",
+            "en": "Total Charged Energy",
+            "nl": "Totaal opgeladen energie"
+          }
         },
         "meter_power.discharged": {
-          "title": "Totaal ontladen energie"
+          "title": {
+            "de": "Entladene Gesamtenergie",
+            "en": "Total Discharged Energy",
+            "nl": "Totaal ontladen energie"
+          }
         }
       }
     },
@@ -247,19 +255,39 @@
       },
       "capabilitiesOptions": {
         "measure_power": {
-          "title": "Opgewekte vermogen"
+          "title": {
+            "de": "Erzeugte Leistung",
+            "en": "Generated Power",
+            "nl": "Opgewekt vermogen"
+          }
         },
         "meter_power": {
-          "title": "Totaal opgewekt"
+          "title": {
+            "de": "Gesamterzeugung",
+            "en": "Generated Total",
+            "nl": "Totaal opgewekt"
+          }
         },
         "meter_power.day": {
-          "title": "Opgewekt vandaag"
+          "title": {
+            "de": "Erzeugung heute",
+            "en": "Generated Today",
+            "nl": "Opgewekt vandaag"
+          }
         },
         "meter_power.month": {
-          "title": "Opgewekt deze maand"
+          "title": {
+            "de": "Erzeugung diesen Monat",
+            "en": "Generated This Month",
+            "nl": "Opgewekt deze maand"
+          }
         },
         "meter_power.year": {
-          "title": "Opgewekt dit jaar"
+          "title": {
+            "de": "Erzeugung dieses Jahr",
+            "en": "Generated This Year",
+            "nl": "Opgewekt dit jaar"
+          }
         }
       }
     },
@@ -335,16 +363,32 @@
       },
       "capabilitiesOptions": {
         "meter_power.imported": {
-          "title": "Geïmporteerde energie"
+          "title": {
+            "de": "Importierte Energie",
+            "en": "Imported Energy",
+            "nl": "Geïmporteerde energie"
+          }
         },
         "meter_power.exported": {
-          "title": "Geëxporteerde energie"
+          "title": {
+            "de": "Exportierte Energie",
+            "en": "Exported Energy",
+            "nl": "Geëxporteerde energie"
+          }
         },
         "measure_power.grid": {
-          "title": "Netvermogen"
+          "title": {
+            "de": "Netzleistung",
+            "en": "Grid Power",
+            "nl": "Netvermogen"
+          }
         },
         "measure_power.solar": {
-          "title": "Zonne Energie"
+          "title": {
+            "de": "Solar Leistung",
+            "en": "Solar Power",
+            "nl": "Zonne Energie"
+          }
         }
       }
     }

@@ -46,7 +46,7 @@
       },
       "capabilitiesOptions": {
         "measure_power": {
-          "title": "Opgewekte vermogen"
+          "title": "Opgewekt vermogen"
         },
         "meter_power": {
           "title": "Totaal opgewekt"
