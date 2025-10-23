@@ -49,5 +49,8 @@
   },
   "1.7.0": {
     "en": "Added Grid & Solar power measurements to the Meter."
+  },
+  "1.7.1": {
+    "en": "Fixed an issue with translations."
   }
 }
