@@ -54,9 +54,7 @@ export default class SolarEdgeDeviceMeter extends SolarEdgeDevice {
     }
 
     // Get measurements for each previous year. This can take a while, so we ensure we only do it once at a time.
-    if (this.getTotalPromise) {
-      await this.getTotalPromise;
-    } else {
+    if (!this.getTotalPromise) {
       this.getTotalPromise = Promise.resolve().then(async () => {
         const measurements = {
           // [year]: {
@@ -112,12 +110,11 @@ export default class SolarEdgeDeviceMeter extends SolarEdgeDevice {
           }
 
           if (measurements[previousYear] === 'missing') {
-            break;
+            break; // There's no more data.
           }
 
           if (measurements[previousYear] === 'error') {
-            previousYear++; // Retry this year next iteration
-            continue;
+            continue; // Skip this year. We will try again next time.
           }
         }
 
