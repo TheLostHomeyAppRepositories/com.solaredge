@@ -52,5 +52,8 @@
   },
   "1.7.1": {
     "en": "Fixed an issue with translations."
+  },
+  "1.7.2": {
+    "en": "Fixed an issue where an infinite loop for Meter devices could happen."
   }
 }
